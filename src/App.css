@@ -1,0 +1,189 @@
+#root {
+  height: 180vh;
+  /* margin: 0 auto; */
+  padding: 0
+  /* text-align: center; */
+
+  /* background-color: #212121; */
+
+  /* background-image: url("https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/75/52/44/75524458-43e2-9dc7-f57f-562822132cbd/cover.jpg/1200x1200bf-60.jpg");
+  opacity: 0.3; */
+}
+
+.background {
+  background-color: #212121;
+  height: 180vh;
+
+  display: flex;
+  justify-content: center;
+
+
+  /* Đưa Component Backgr vào khung trang web (.background chính là Component Backgr) */
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  /* z-index: 1; */
+}
+
+
+.container {
+  background-color: #e7e7e7;
+  
+
+  /* position: absolute;
+  top: 150px; */
+
+  margin-top: 150px;
+
+  height: 550px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0, 3);
+  transition: all 0.5 ease;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  /* Đưa Component Box vào khung trang web (.container chính là Component Box) */
+  position: absolute;
+  right: 0;
+  left: 0;
+
+  /* z-index: 999; */
+}
+
+
+.container:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+.player-img{
+  width: 300px;
+  height: 300px;
+  /* background-color:aqua; */
+  position: relative;
+  bottom: 50px;
+  
+}
+
+.player-img img {
+
+  /* Tìm hiểu thuộc tính object-fit:  */
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  
+  /* opacity: 0; */
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+
+  border-radius:  20px;
+}
+
+
+.player-img:hover img {
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.8);
+
+
+}
+
+
+.player-img img .active {
+  height: 100px;
+  width: 100px;
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+
+
+.player-progress {
+  background-color: #BBB7BA;
+  border-radius: 5px;
+  cursor: pointer;
+  /* top - horizontal - bottom */
+  margin: 20px 20px 60px;
+  height: 6px;
+  width: 90%;
+
+}
+
+
+
+.progress {
+  background-color: #212121;
+  
+  /* Đổi màu cho thanh progress */
+  /* accent-color: #212121; */
+
+  margin-bottom: 5px;
+  cursor: pointer;
+
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1 linear;
+}
+
+
+.music-duration {
+  /* position: relative; */
+  /* top: 25px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.player-controls {
+  /* position: relative; */
+  display: flex;
+  justify-content: space-around;
+  /* top: -15px; */
+  /* left: 120px; */
+  width: 200px;
+}
+
+
+.fa-solid {
+  font-size: 25px;
+  color: #666;
+  /* margin-right: 30px; */
+  cursor: pointer;
+
+  /* Tìm hiểu thuộc tính này: */
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+
+.fa-solid:hover {
+
+  /* Tìm hiểu thuộc tính này: */
+  filter: brightness(40%);
+}
+
+
+
+.play-button {
+  font-size: 44px;
+  position: relative;
+  bottom: 10px;
+}
+
+
+.pause-button {
+  font-size: 44px;
+  position: relative;
+  bottom: 10px;
+}
+
+
+
+
+
+
+
+
